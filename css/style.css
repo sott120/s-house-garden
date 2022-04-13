@@ -383,7 +383,7 @@ section{
 }
 
     
-.story, .mdpick{
+.story, .mdpick, .guide, .quick {
     width: calc(100% + 20px);
     display: flex;
     flex-wrap: wrap;
@@ -392,7 +392,7 @@ section{
 }
 
 
-.story >figure{
+figure{
     width: 25%;
     padding: 20px 10px;
     box-sizing: border-box;
@@ -942,11 +942,6 @@ figure > a> div::after{
     margin-left: -10px;
 } */
 
-.mdpick figure{
-    width: 25%;
-    padding: 20px 10px;
-    box-sizing: border-box;
-}
 
 .mdpick figure>a >div{
     padding-top: 100%;
@@ -1015,6 +1010,141 @@ figure > a> div::after{
     text-decoration: line-through;
     padding-right: 10px;
 }
+
+.w100{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.guide ul{
+    display: flex;
+    width: 100%;
+}
+
+.guide li{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.guide a{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 128.8%;
+    /* 높이 맞춰주려고 포지션주고, 패딩계산, 자식에 left0 right0 */
+    
+}
+.guide a>div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.guide .img1{
+    background-image: url(../img/tour/211213_093642_png.png);
+}
+.guide .img2{
+    background-image: url(../img/tour/211213_093707_png.png);
+}
+.guide .img3{
+    background-image: url(../img/tour/211213_093741_png.png);
+}
+.guide .img4{
+    background-image: url(../img/tour/211213_093812_png.png);
+}
+
+.guide .new{
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 27px;
+    height: 41px;
+    background-image: url(../img/ico/new_guide.png);
+    background-size: 100% auto;
+}
+
+.quick >div{
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.quick a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 28px 6.78%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+
+.quick .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+.quick .txt{
+    font-size: 14px;
+    color: #808080;
+}
+
+.quick .sp{
+    width: 40px;
+    height: 40px;
+    background-size: auto 40px;
+    background-image: url(../img/common/sp_lv.png);
+}
+
+.quick .lv{
+    background-position: -119px 0;
+
+}
+
+.quick .gm{
+    background-position: -79px 0;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #4d4d4d;
+}
+
+.footer_wrap{
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0 50px;
+    border-bottom: solid #f2f2f2;
+    overflow: hidden;
+}
+
+footer span{
+    font-size: 15px;
+    line-height: 26px;
+    color: #d9d9d9;
+}
+
+span:not(:last-child) {
+    position: relative;
+    margin-right: 25px;
+}
+
+footer span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -13px;
+    width: 1px;
+    height: 10px;
+    background-color: #808080;
+
 
 /************************ 미디어쿼리 시작 ********************/
 @media only screen and (max-width:1200px){
@@ -1171,6 +1301,53 @@ figure > a> div::after{
         font-size: 13px;
     }
 
+    .mdpick p{
+        font-size: 13px;
+    }
+
+    .mdpick ul{
+        flex-direction: column;
+    }
+
+    .sale{
+        font-size: 16px;
+    }
+    
+    .price{
+        font-size: 16px;
+    }
+
+    .guide .new{
+        width: 25px;
+        height: 38px;
+    }
+
+    .quick a{
+        padding: 15px 6.78%;
+    }
+
+    .quick .title {
+        font-size: 14px;
+    }
+
+    .quick .txt{
+        font-size: 13px;
+    }
+    .quick .sp{
+        position: relative;
+        width: 33px;
+        height: 33px;
+        background-size: auto 33px;
+    }
+    
+    .quick .lv{
+        background-position: -99px 0;
+    
+    }
+    
+    .quick .gm{
+        background-position: -66px 0;
+    }
     /* max-width: 1200px */
 }
 
@@ -1243,7 +1420,7 @@ figure > a> div::after{
     width: 25%;
 }
 
-.story >figure{
+figure{
     width: 50%;
 }
 
@@ -1332,7 +1509,42 @@ figure > a> div::after{
 .vidio >div:first-child{
     width: calc(100% - 20px);
     margin-right: 0;
-
 }
+
+.guide ul{
+    overflow: auto;
+}
+
+.guide li{
+    width: 57%;
+    padding: 0 10px;
+    flex-shrink: 0;
+}
+
+.guide .new{
+    width: 23px;
+    height: 35px;
+}
+
+
+
+.txt span{
+    display: block;
+}
+
+.quick a{
+    align-items: flex-start;
+    height: 117px;
+    position: relative;
+    padding: 15px 0 15px 6.78%;
+}
+.quick .txt {
+    font-size: 11px;
+}
+.quick .sp{
+    top: 51px;
+    right: 10px
+}
+
     /* max-width: 767px */
 }
