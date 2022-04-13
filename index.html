@@ -159,17 +159,19 @@
         <section>
             <div class="title_wrap">
                 <h2>스토리</h2>
-                <div class="more"><a href="#">더보기</a></div>
+                <div class="more "><a href="#">더보기</a></div>
             </div>
-            <ul class="tab">
-                <li><a class="tab_active" href="">전체</a></li>
-                <li><a href="">식물/플라워</a></li>
-                <li><a href="">플랜테리어</a></li>
-                <li><a href="">가드닝 용품</a></li>
-                <li><a href="">DIY/체험</a></li>
-                <li><a href="">싱그런 여행</a></li>
-                <li><a href="">친환경라이프</a></li>
-            </ul>
+            <div class="story_wrap">
+                <ul class="tab">
+                    <li><a class="tab_active" href="">전체</a></li>
+                    <li><a href="">식물/플라워</a></li>
+                    <li><a href="">플랜테리어</a></li>
+                    <li><a href="">가드닝 용품</a></li>
+                    <li><a href="">DIY/체험</a></li>
+                    <li><a href="">싱그런 여행</a></li>
+                    <li><a href="">친환경라이프</a></li>
+                </ul>
+            </div>    
             <article class="story">
                 <figure>
                     <a href="#">
@@ -226,7 +228,7 @@
                         </a>
                     </div>
                 </figure>
-                <figure>
+                <figure class="dis_none">
                     <a href="#">
                         <div class="story_img5">
                         </div>
@@ -239,7 +241,7 @@
                         </a>
                     </div>
                 </figure>
-                <figure>
+                <figure class="dis_none">
                     <a href="#">
                         <div class="story_img6">
                         </div>
@@ -252,7 +254,7 @@
                         </a>
                     </div>
                 </figure>
-                <figure>
+                <figure class="dis_none">
                     <a href="#">
                         <div class="story_img7">
                         </div>
@@ -265,7 +267,7 @@
                         </a>
                     </div>
                 </figure>
-                <figure>
+                <figure class="dis_none">
                     <a href="#">
                         <div class="story_img8">
                         </div>
@@ -278,8 +280,10 @@
                         </a>
                     </div>
                 </figure>
-                
             </article>
+            <div class="more_btn">
+                <div>더 많은 스토리 보기</div>
+            </div>
         </section>
         <section>
             <div class="title_wrap">
@@ -290,7 +294,7 @@
                     <li><a class="tab_active" href="">주간랭킹</a></li>
                     <li><a href="">월간랭킹</a></li>
                 </ul>
-                <p class="date">2022.04.04~2022.04.07 기준</p>
+                <p class="date dis_none">2022.04.04~2022.04.07 기준</p>
             </div>
             <!-- <article class="lank_list">
                 <ul class="lank_wrap">
@@ -320,51 +324,53 @@
                     </li>
                 </ul>
             </article> -->
-            <article class="lank">
-                <div>
-                    <em class="lank_num">1</em>
-                    <div class="lank_img">
-                        <img src="img/profile/220327_101738_jpeg.jpg" alt="">
-                    </div>
-                    <div class="lank_txt">
-                        <div class="lank_name">
-                            <a href="#">무무무</a> ·
-                            <span>팔로워</span>
+            <div class="lank_wrap">    
+                <article class="lank">
+                    <div>
+                        <em class="lank_num">1</em>
+                        <div class="lank_img">
+                            <img src="img/profile/220327_101738_jpeg.jpg" alt="">
                         </div>
-                        <p class="lank_title">꽃 좋아하고 사진 좋아하는 무무무</p>
-                    </div>
-                </div>
-                <div>
-                    <em class="lank_num">2</em>
-                    <div class="lank_img">
-                        <img src="img/profile/210802_143646_jpeg.jpg" alt="">
-                    </div>
-                    <div class="lank_txt">
-                        <div class="lank_name">
-                            <a href="#">쮸쀼쮸쀼</a> ·
-                            <span>팔로워</span>
+                        <div class="lank_txt">
+                            <div class="lank_name">
+                                <a href="#">무무무</a> ·
+                                <span>팔로워</span>
+                            </div>
+                            <p class="lank_title">꽃 좋아하고 사진 좋아하는 무무무</p>
                         </div>
-                        <p class="lank_title">@bzzuzzu</p>
                     </div>
-                </div>
-                <div>
-                    <em class="lank_num">3</em>
-                    <div class="lank_img">
-                        <img src="img/profile/profile.jpg" alt="">
-                    </div>
-                    <div class="lank_txt">
-                        <div class="lank_name">
-                            <a href="#">플라랜드</a> ·
-                            <span>팔로워</span>
+                    <div>
+                        <em class="lank_num">2</em>
+                        <div class="lank_img">
+                            <img src="img/profile/210802_143646_jpeg.jpg" alt="">
                         </div>
-                        <p class="lank_title"> &nbsp;</p>
+                        <div class="lank_txt">
+                            <div class="lank_name">
+                                <a href="#">쮸쀼쮸쀼</a> ·
+                                <span>팔로워</span>
+                            </div>
+                            <p class="lank_title">@bzzuzzu</p>
+                        </div>
                     </div>
-                </div>
-            </article>
-
+                    <div>
+                        <em class="lank_num">3</em>
+                        <div class="lank_img">
+                            <img src="img/profile/profile.jpg" alt="">
+                        </div>
+                        <div class="lank_txt">
+                            <div class="lank_name">
+                                <a href="#">플라랜드</a> ·
+                                <span>팔로워</span>
+                            </div>
+                <p class="date dis_none">2022.04.04~2022.04.07 기준</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="m_date hide">2022.04.04~2022.04.07 기준</p>
         </section>
         <section>
-            <div class="title_wrap">
+            <div class="title_wrap b_bottom">
                 <h2>싱그런 여행</h2>
                 <div class="more"><a href="#">더보기</a></div>
             </div>
@@ -379,8 +385,44 @@
                             <p>#사문진 #사문진나루처 #대구산책로 #산책</p>
                         </div>
                         <ul class="trip_ico">
-                            <li class="state_like">10</li>
-                            <li class="state_scrap">11</li>
+                            <li class="state_like dis_none">10</li>
+                            <li class="state_scrap dis_none">11</li>
+                            <li class="trip_arrow"></li>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+            <article class="trip">
+                <div class="trip_wrap">
+                    <a href="">
+                        <div class="trip_img trip1">
+                            <!-- <img src="img/photo_list/s210422_094249611.png" alt=""> -->
+                        </div>
+                        <div class="trip_txt">
+                            <span>사문진 나루터</span>
+                            <p>#사문진 #사문진나루처 #대구산책로 #산책</p>
+                        </div>
+                        <ul class="trip_ico">
+                            <li class="state_like dis_none">10</li>
+                            <li class="state_scrap dis_none">11</li>
+                            <li class="trip_arrow"></li>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+            <article class="trip">
+                <div class="trip_wrap">
+                    <a href="">
+                        <div class="trip_img trip1">
+                            <!-- <img src="img/photo_list/s210422_094249611.png" alt=""> -->
+                        </div>
+                        <div class="trip_txt">
+                            <span>사문진 나루터</span>
+                            <p>#사문진 #사문진나루처 #대구산책로 #산책</p>
+                        </div>
+                        <ul class="trip_ico">
+                            <li class="state_like dis_none">10</li>
+                            <li class="state_scrap dis_none">11</li>
                             <li class="trip_arrow"></li>
                         </ul>
                     </a>
@@ -392,17 +434,234 @@
                 <h2>싱싱튜브</h2>
                 <div class="more"><a href="#">더보기</a></div>
             </div>
+            <article  class="vidio">
+                <div>
+                    <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/XPeEBfZVkP4">
+                        </iframe>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                <div>
+                    <div class="youtube">
+                        <div class="thums img2"></div>
+                        <div class="play"></div>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                <div>
+                    <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/XPeEBfZVkP4">
+                        </iframe>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                <div>
+                    <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/XPeEBfZVkP4">
+                        </iframe>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                <div>
+                    <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/XPeEBfZVkP4">
+                        </iframe>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                <div class="dis_none">
+                    <div class="youtube">
+                        <iframe src="https://www.youtube.com/embed/XPeEBfZVkP4">
+                        </iframe>
+                        <div class="time">12:26</div>
+                        <div class="scrap"></div>
+                    </div>    
+                    <p>
+                        [고무나무]미모의수채화 vs 뱅갈 /가지치기전 해야할일*광량*물주기등
+                    </p>
+                </div>
+                
+            </article>
         </section>
+        <!--말풍선만들기 <div class="test">
+            <div class="tooltip"></div>
+        </div> -->
         <section>
             <div class="title_wrap">
                 <h2>HOT Keyword</h2>
             </div>
+            <article class="keyword">
+                    <ul>
+                        <li>
+                            <a href="">#플랜테리어</a>
+                            <a href="">#반려식물</a>
+                            <a href="">#홈가드닝</a>
+                            <a href="">#식물인테리어</a>
+                            <a href="">#plant</a>
+                            <a href="">#식물</a>
+                            <a href="">#식물카페</a>
+                            <a href="">#공기정화식물</a>
+                            <a href="">#싱그런여행</a>
+                            <a href="">#식물키우기</a>
+                            <a href="">#몬스테라</a>
+                            <a href="">#수경재배</a>
+                            <a href="">#식물집사</a>
+                            <a href="">#꽃</a>
+                            <a href="">#공기정화</a>
+                        </li>
+                        <li>
+                            <a href="">#화분</a>
+                            <a href="">#5월</a>
+                            <a href="">#6월</a>
+                            <a href="">#토분</a>
+                            <a href="">#가드닝</a>
+                            <a href="">#행잉플랜트</a>
+                            <a href="">#베란다정원</a>
+                            <a href="">#식물스타그램</a>
+                            <a href="">#분갈이</a>
+                            <a href="">#식인</a>
+                            <a href="">#튤립</a>
+                            <a href="">#식물일기</a>
+                            <a href="">#필로덴드론</a>
+                            <a href="">#경기도</a>
+                            <a href="">#꽃다발</a>
+                        </li>
+                    </ul>
+            </article>
         </section>
         <section>
             <div class="title_wrap">
-                <h2>MD Pick</h2>
+                <h2>MD's Pick</h2>
                 <div class="more"><a href="#">더보기</a></div>
             </div>
+            <article class="mdpick">
+                <figure>
+                    <a href="">
+                        <div class="img1">
+                        </div>
+                        <figcaption>
+                            <p>우디홈 화분 선반 정리대 원목 베란다 진열대 거실 다육이 받침대</p>
+                            <ul>
+                                <li class="sale">35%</li>
+                                <li class="price"><span>43,900</span>28,900</li>
+                            </ul>    
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img2">
+                        </div>
+                        <figcaption>
+                            <p>스테인드글라스 행운의 고래 썬캐쳐</p>
+                            <ul>
+                                <li class="sale">18%</li>
+                                <li class="price"><span>35,000</span>29,000</li>
+                            </ul>     
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img3">
+                        </div>
+                        <figcaption>
+                            <p>스테인드글라스 빈티지 유리화병</p>
+                            <ul>
+                                <li class="sale">7%</li>
+                                <li class="price"><span>45,000</span>42,000</li>
+                            </ul>    
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img4">
+                        </div>
+                        <figcaption>
+                            <p>페피타 햇살 쉬폰 포스터 패브릭 숲 나무 자연 풍경 감성 햇빛 가을 꾸미기 써니데이</p>
+                            <ul>
+                                <li class="sale">17%</li>
+                                <li class="price"><span>42,500</span>35,500</li>
+                            </ul>      
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img5">
+                        </div>
+                        <figcaption>
+                            <p>[수나그린] 생기 가득 열대식물 시그니처 팝팟 고사리 4종 (더피 후마타 아스파라 아비스)</p>
+                            <ul>
+                                <li class="sale">36%</li>
+                                <li class="price"><span>19,900</span>12,900</li>
+                            </ul>     
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img6">
+                        </div>
+                        <figcaption>
+                            <p>[그라운드120]소형화분 보라싸리 모카토분</p>
+                            <ul>
+                                <li class="sale">21%</li>
+                                <li class="price"><span>56,300</span>45,000</li>
+                            </ul>     
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img7">
+                        </div>
+                        <figcaption>
+                            <p>Ocean Greenery 인테리어 포스터 액자 A1, A2, A3 사이즈</p>
+                            <ul>
+                                <li class="sale"></li>
+                                <li class="price">20,000</li>
+                            </ul>     
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="img8">
+                        </div>
+                        <figcaption>
+                            <p>흙만지는남자 인테리어화분 감성 수제 화이트 토분 화분 흙만남 동물토분 부끄부끄 문어군 토분</p>
+                            <ul>
+                                <li class="sale">10%</li>
+                                <li class="price"><span>25,000</span>22,500</li>
+                            </ul>      
+                        </figcaption>
+                    </a>
+                </figure>
+                
+            </article>
         </section>
         <section>
             <div class="title_wrap">
