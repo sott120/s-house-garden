@@ -7,222 +7,6 @@ body{
     display: none;
 }
 
-.h_top_wrap{
-    background-color: #f2f2f2;
-}
-
-.h_top{
-    width: 1200px;
-    height: 40px;
-    line-height: 40px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.h_top ul{
-    display: flex;
-    align-items: center;
-}
-
-.sns li a{
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    margin-right: 2px;
-    background-size: 100% 100%;
-}
-
-.u_gp >a{
-    background-image: url(../img/common/u_gp.png);
-}
-
-.u_ap >a{
-    background-image: url(../img/common/u_ap.png);
-}
-
-.u_in >a{
-    background-image: url(../img/common/u_in.png);
-}
-
-.u_kc >a{
-    background-image: url(../img/common/u_kc.png);
-}
-
-.u_fb >a{
-    background-image: url(../img/common/u_fb.png);
-}
-
-.u_yt >a{
-    background-image: url(../img/common/u_yt.png);
-}
-
-
-.login > li > a{
-    font-size: 12px;
-    color: #808080;
-    margin-left: 20px;
-}
-
-.login > li > a:hover{
-    text-decoration: underline;
-}
-
-
-
-/****** 헤더 두번째라인 시작 ******/
-
-.icon{
-    background-image: url(../img/common/sp_common.png);
-}
-
-.h_bot_wrap{
-    border-bottom: 1px solid #d9d9d9 ;
-}
-
-.h_bot{
-    width: 1200px;
-    padding-bottom: 10px;
-    margin: auto;
-}
-
-.logo{
-    /* a태그에 이미지를 넣으려면 디스플레이 블록 필요*/
-    display: block;
-    width: 160px;
-    height: 30px;
-    margin: 20px auto;
-}
-
-
-.h_bot >div{
-    display: flex;
-    align-items: center;
-}
-
-.h_bot nav{
-    width: calc(100% - 210px);
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.gnb_wrap{
-    display: flex;
-    align-items: center;
-}
-
-
-.btn_nav{
-    display: block;
-    width: 26px;
-    height: 17px;
-    background-position: -22px -32px;
-    margin-right: 20px;
-}
-
-
-.gnb{
-    display: flex;
-}
-
-.gnb li{
-    padding: 0 17px;
-}
-
-.gnb >li >a{
-    line-height: 40px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #222624;
-}
-
-.active{
-    color: #009a3e !important; 
-    position: relative;
-}
-
-.active::after{
-    content: "";
-    display: block;
-    width: 7px;
-    height: 7px;
-    background-color: #009a3e;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: -24px;
-    transform: translate(-50%);
-}
-
-.sp_icon{
-    height: 40px;
-}
-
-.sp_icon >ul{
-    height: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.sp_icon >ul > li{
-    width: 40px;
-}
-
-.sp_icon a{
-    display: block;
-}
-
-
-.sp_icon .sp_myinfo{
-    width: 21px;
-    height: 21px;
-    background-position: -50px -32px;
-}
-
-.sp_icon .sp_cart{
-    width: 26px;
-    height: 24px;
-    background-position: -73px -32px;
-}
-
-.sp_icon .sp_wright{
-    width: 22px;
-    height: 22px;
-    background-position: -101px -32px;
-}
-
-.search_wrap{
-    width: 210px;
-    height: 40px;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.search_wrap >input{
-    background: none;
-    border: none;
-    outline: none;
-}
-
-.search_wrap >span >a{
-    display: block;
-    width: 17px;
-    height: 17px;
-    background-image: url(../img/common/sp_common.png);
-    background-position: -125px -32px;
-}
-
-/**************************헤더 끝, 메인배너 시작*************************/ 
-
 section{
     width: 1200px;
     margin: auto;
@@ -383,7 +167,7 @@ section{
 }
 
     
-.story, .mdpick, .guide, .quick {
+.story, .mdpick, .guide, .quick, .photo {
     width: calc(100% + 20px);
     display: flex;
     flex-wrap: wrap;
@@ -492,7 +276,9 @@ figure > a> div::after{
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-
+.more_btn > div{
+    display: none;
+}
 .user_img1{
     background-image: url(../img/profile/220327_101738_jpeg.jpg);
 }
@@ -533,71 +319,6 @@ figure > a> div::after{
 
 
 /* 인기계정랭킹 */
-/* .lank_list{
-    margin: 30px 40px 0;
-}
-
-.lank_wrap{
-    display: flex;
-
-}
-
-.lank_wrap > li{
-    width: calc((100% - 40px)/3);
-    height: 107px;
-    padding: 30px 30px 27px 122px;
-    line-height: 20px;
-    background-color: #f8f8f8;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-right: 20px;
-    position: relative;
-}
-
-
-.lank_ico{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    line-height: 24px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #009a3e;
-    border-top-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.lank_img1{
-    position: absolute;
-    top: calc(50% - 35px);
-    left: 24px;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #d9d9d9;
-    border-radius: 100%;
-    background-image: url(../img/profile/220327_101738_jpeg.jpg);
-    background-size: cover;
-}
-
-.lank_img2{
-    position: absolute;
-    top: calc(50% - 35px);
-    left: 24px;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #d9d9d9;
-    border-radius: 100%;
-    background-image: url(../img/profile/profile.jpg);
-    background-size: cover;
-}
-
-.lank_txt{
-    font-size: 15px;
-    color: #808080;
-} */
 
 
 .date{
@@ -768,12 +489,12 @@ figure > a> div::after{
     background-image: url(../img/common/arrow19_r.png);
 }
 
-.vidio{
+.video{
     width: calc(100% + 20px);
     display: flex;
     flex-wrap: wrap;
 }
-.vidio >div{
+.video >div{
     width: calc(33.333% - 20px);
     margin-right: 20px;
     margin-bottom: 30px;
@@ -787,7 +508,7 @@ figure > a> div::after{
     border-radius: 4px;
 }
 
-.vidio iframe, .vidio .thums{
+.video iframe, .video .thums{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -795,7 +516,7 @@ figure > a> div::after{
     left: 0;
 }
 
-.vidio .thums{
+.video .thums{
     background-size: cover;
     background-position: center center;
     transition: transform .5s;
@@ -828,7 +549,7 @@ figure > a> div::after{
     transform: translate(-50%, -50%);
 }
 
-.vidio p{
+.video p{
     width: 100%;
     line-height: 20px;
     font-size: 14px;
@@ -861,11 +582,11 @@ figure > a> div::after{
     background-repeat: no-repeat;
 }
 
-.vidio:hover .thums{
+.video:hover .thums{
     transform: scale(1.05);/*105%*/
 }
 
-.vidio > div:hover p{
+.video > div:hover p{
     text-decoration: underline;
 }
 
@@ -1110,141 +831,34 @@ figure > a> div::after{
     background-position: -79px 0;
 }
 
-
-
-footer{
+figure > a> img{
     width: 100%;
-    background-color: #4d4d4d;
-}
-
-.footer_wrap{
-    width: 1200px;
-    margin: auto;
-    padding: 30px 0 50px;
-    border-bottom: solid #f2f2f2;
-    overflow: hidden;
-}
-
-footer span{
-    font-size: 15px;
-    line-height: 26px;
-    color: #d9d9d9;
-}
-
-span:not(:last-child) {
+    height: 100%;
+    border-radius: 4px;
     position: relative;
-    margin-right: 25px;
 }
 
-footer span:not(:last-child)::after {
+figure > a> img::after{
     content: "";
+    display: block;
+    width: 41px;
+    height: 47px;
+    background-image: url(../img/ico/scrap.png);
+    background-size: 31px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: absolute;
-    top: 9px;
-    right: -13px;
-    width: 1px;
-    height: 10px;
-    background-color: #808080;
+    right: 10px;
+    bottom: 10px;
+}
+
+.new_video > div{
+    width: calc(25% - 20px) !important;
+}
 
 
 /************************ 미디어쿼리 시작 ********************/
 @media only screen and (max-width:1200px){
-    .h_top{
-        width: 100%;
-        height: 28px;
-        line-height: 28px;
-        padding: 0 23px;
-        box-sizing: border-box;
-    }   
-
-    .sns li a{
-        width: 18px;
-        height: 18px;
-    }
-
-    .login > li > a{
-        font-size: 11px;
-    }
-
-
-
-    .h_bot{
-        width: 100%;
-        padding: 0 23px 10px;
-        box-sizing: border-box;
-    }
-
-    .h_bot nav{
-        width: calc(100% - 165px);
-    }
-
-    .gnb >li{
-        padding: 10px;
-    }
-    .gnb >li >a{
-        line-height: 28px;
-        font-size: 14px;
-        font-weight: 700;
-        color: #222624;
-    }
-
-    .btn_nav{
-        width: 18px;
-        height: 12px;
-        background-position: -16px -23px;
-        margin-right: 20px;
-        background-size: 112px auto;/*이거 맨 아래에 넣어야 너비 안먹음*/
-    }
-
-
-    
-    .sp_icon >ul > li{
-        width: 34px;
-    }
-
-    .sp_icon a{
-        display: block;
-        background-size: 112px auto;
-    }
-
-
-    .sp_icon .sp_myinfo{
-        width: 15px;
-        height: 15px;
-        background-position: -35px -23px;
-    }
-
-    .sp_icon .sp_cart{
-        width: 18px;
-        height: 17px;
-        background-position: -51px -23px;
-    }
-
-    .sp_icon .sp_wright{
-        width: 15.5px;
-        height: 15.5px;
-        background-position: -70px -23px;
-    }
-
-
-    .search_wrap{
-        width: 165px;
-        height: 28px;
-        letter-spacing: -2px;
-    }
-
-    .search_wrap >input{
-        font-size: 11px;
-        width: 130px;
-    }
-    
-    .search_wrap >span >a{
-        display: block;
-        width: 17px;
-        height: 17px;
-        background-image: url(../img/common/sp_common.png);
-        background-position: -125px -32px;
-    }
-/************ max-width: 1200px 메인배너 시작 ***********/
 
     section{
         width: 100%;
@@ -1297,7 +911,7 @@ footer span:not(:last-child)::after {
         bottom: 7px;
     }
 
-    .vidio p{
+    .video p{
         font-size: 13px;
     }
 
@@ -1357,46 +971,7 @@ footer span:not(:last-child)::after {
         display: none;
     }
 
-    .h_top{
-        display: none;
-    }
 
-    .h_bot_wrap{
-        border-bottom: none;
-    }
-
-    .gnb{
-        display: none;
-    }
-
-    .sp_icon >ul > li:first-child{
-        display: none;
-    }
-
-    .sp_icon >ul > li:last-child{
-        display: none;
-    }
-
-
-    .h_bot{
-        padding: 0 10px;
-    }
-
-
-    .h_bot nav{
-        width: calc(100% - 20px);
-        position: absolute;
-        top: 0;
-    }
-
-
-    .search_wrap{
-        width: 100%;
-        height: 28px;
-        letter-spacing: -2px;
-    }
-
-/************  max-width: 767px 메인배너 시작 ***********/
 
 .slide_img{
     padding-top: 100%;
@@ -1426,6 +1001,7 @@ figure{
 
 
 .more_btn > div{
+    display: block;
     width: 233px;
     height: 40px;
     line-height: 39px;
@@ -1501,12 +1077,12 @@ figure{
     width: 38px;
 }
 
-.vidio >div{
+.video >div{
     width: calc(50% - 20px);
     margin-right: 20px;
     margin-bottom: 30px;
 }
-.vidio >div:first-child{
+.video >div:first-child{
     width: calc(100% - 20px);
     margin-right: 0;
 }
@@ -1545,6 +1121,12 @@ figure{
     top: 51px;
     right: 10px
 }
+
+.new_video > div {
+    width: calc(50% - 20px) !important;
+    margin-right: 20px !important;
+}
+
 
     /* max-width: 767px */
 }
