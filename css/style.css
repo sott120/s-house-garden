@@ -167,7 +167,7 @@ section{
 }
 
     
-.story, .mdpick, .guide, .quick, .photo {
+.story, .mdpick, .guide, .quick, .photo, .magazine {
     width: calc(100% + 20px);
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +180,10 @@ figure{
     width: 25%;
     padding: 20px 10px;
     box-sizing: border-box;
+}
+
+figure > div{
+    width: 100%;
 }
 
 figure >a{
@@ -264,10 +268,11 @@ figure > a> div::after{
 
 
 .story figcaption{
-    font-size: 12px;
+    font-size: 14px;
     margin: 15px 0 10px;
     color: #4d4d4d;
 }
+
 .story > figure span{
     display: inline-block;
     width: 33px;
@@ -311,10 +316,14 @@ figure > a> div::after{
     background-image: url(../img/profile/210226_142333_png.jpg);
 }
 .story > figure p{
+    width: calc(100% - 39px);
     line-height: 33px;
     font-size: 15px;
     color: #4d4d4d;
     display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -415,7 +424,7 @@ figure > a> div::after{
     border-bottom: 1px solid #d9d9d9;
 }
 
-.trip_wrap >a{
+.trip_wrap >a, .qna_wrap>a{
     border-bottom: 1px solid #d9d9d9;
     padding: 15px 30px;
     box-sizing: border-box;
@@ -438,7 +447,7 @@ figure > a> div::after{
 }
 
 
-.trip_txt{
+.trip_txt, .qna_txt{
     width: calc(100% - 210px);
     padding-left: 20px;
     box-sizing: border-box;
@@ -454,7 +463,7 @@ figure > a> div::after{
     background-size: 12px auto;
 }
 
-.trip_txt >p{
+.trip_txt >p, .qna_txt >p{
     font-size: 14px;
     color: #808080;
 }
@@ -582,7 +591,7 @@ figure > a> div::after{
     background-repeat: no-repeat;
 }
 
-.video:hover .thums{
+.video > div:hover .thums{
     transform: scale(1.05);/*105%*/
 }
 
@@ -831,6 +840,18 @@ figure > a> div::after{
     background-position: -79px 0;
 }
 
+
+.photo .colum{
+    width: 25%;
+}
+
+.photo figure{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
 figure > a> img{
     width: 100%;
     height: 100%;
@@ -838,24 +859,62 @@ figure > a> img{
     position: relative;
 }
 
-figure > a> img::after{
-    content: "";
-    display: block;
-    width: 41px;
-    height: 47px;
-    background-image: url(../img/ico/scrap.png);
-    background-size: 31px auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-}
-
 .new_video > div{
     width: calc(25% - 20px) !important;
 }
 
+
+.magazine > div{
+    width: 33.333%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.magazine > div >a{
+    display: block;
+    width: 100%;
+}
+
+.magazine > div >a > div{
+    width: 100%;
+    padding-top: calc(268 / 590 * 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 4px;
+}
+
+.magazine .img1{
+    background-image: url(../img/211001_093655_jpg.jpg);
+}
+.magazine .img2{
+    background-image: url(../img/211021_094710_jpg.jpg);
+}
+.magazine .img3{
+    background-image: url(../img/211201_164008_jpg.jpg);
+}
+
+.qna_list{
+    margin-bottom: 20px;
+}
+.qna_wrap img{
+    width: 49px;
+    height: 49px;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+.qna_txt > p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qna_txt >span{
+    color: #4d4d4d;
+    padding-right: 22px;
+}
 
 /************************ 미디어쿼리 시작 ********************/
 @media only screen and (max-width:1200px){
@@ -999,6 +1058,20 @@ figure{
     width: 50%;
 }
 
+figure > a> div::after{
+    content: "";
+    display: block;
+    width: 29px;
+    height: 34px;
+    background-size: 22px auto;
+    right: 7px;
+    bottom: 7px;
+}
+
+
+.story figcaption{
+    font-size: 12px;
+}
 
 .more_btn > div{
     display: block;
@@ -1024,7 +1097,7 @@ figure{
     overflow-x: scroll;
 }
 .lank{
-    width: calc(210% + 220px);
+    width: calc(170% + 220px);
     padding: 20px 0px;
 }
 
@@ -1065,17 +1138,24 @@ figure{
     /* 말줄임표 나오는 삼종세트 */
 }
 
-.trip_wrap >a{
+.trip_wrap >a, .qna_wrap >a{
     padding: 15px;
 }
 
-.trip_txt{
+.trip_txt, .qna_txt{
     width: calc(100% - 90px);
 }
 
 .trip_ico{
     width: 38px;
 }
+
+.trip_txt >span, .trip_txt >p, .qna_txt>span, .qna_txt >p{
+    font-size: 13px;
+}
+
+
+
 
 .video >div{
     width: calc(50% - 20px);
@@ -1085,6 +1165,22 @@ figure{
 .video >div:first-child{
     width: calc(100% - 20px);
     margin-right: 0;
+}
+
+
+.keyword li {
+    white-space: nowrap;
+    padding-left: 10px;
+}
+.keyword li:last-child {
+    padding-left: 50px;
+}
+
+.keyword a {
+    padding: 0px 22px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #3a6b4a;
 }
 
 .guide ul{
@@ -1127,6 +1223,31 @@ figure{
     margin-right: 20px !important;
 }
 
+
+.magazine{
+    flex-direction: column;
+}
+
+.magazine > div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.photo {
+    margin-bottom: 10px;
+}
+.photo .colum {
+    width: 50%;
+}
+
+
+.qna_txt > p{
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
     /* max-width: 767px */
 }

@@ -465,11 +465,17 @@ address a, .f_info a{
         padding: 0 10px;
     }
 
+    .logo {
+        width: 88px;
+        height: 17px;
+        background-position: top center;
+        background-size: cover;
+    }
 
     .h_bot nav{
         width: calc(100% - 20px);
         position: absolute;
-        top: 0;
+        top: 10px;
     }
 
 
@@ -485,6 +491,10 @@ address a, .f_info a{
         box-sizing: border-box;    
     }
 
+    .f_cs >ul {
+        font-size: 13px;
+    }
+    
     .f_nav{
         background-color: transparent;
         padding: 0;

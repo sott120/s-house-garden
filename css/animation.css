@@ -1,0 +1,21 @@
+.category_list li:hover p{
+    text-decoration: underline;
+
+}
+
+
+
+
+
+.story figure a:hover figcaption{
+    text-decoration: underline;
+}
+
+.mdpick figure a:hover figcaption> p{
+    text-decoration: underline;
+}
+
+
+.magazine >div:hover .hover{
+    transform: scale(1.05);
+}
