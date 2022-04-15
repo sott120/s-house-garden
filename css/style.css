@@ -189,6 +189,8 @@ figure > div{
 figure >a{
     display: block;
     width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
 }
 figure > a> div{
     width: 100%;
@@ -196,7 +198,6 @@ figure > a> div{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border-radius: 4px;
     position: relative;
 }
 
@@ -857,6 +858,7 @@ figure > a> img{
     height: 100%;
     border-radius: 4px;
     position: relative;
+    transition: transform .5s;
 }
 
 .new_video > div{
@@ -872,6 +874,7 @@ figure > a> img{
 .magazine > div >a{
     display: block;
     width: 100%;
+    overflow: hidden;
 }
 
 .magazine > div >a > div{
@@ -885,12 +888,15 @@ figure > a> img{
 
 .magazine .img1{
     background-image: url(../img/211001_093655_jpg.jpg);
+    transition: transform .3s;
 }
 .magazine .img2{
     background-image: url(../img/211021_094710_jpg.jpg);
+    transition: transform .3s;
 }
 .magazine .img3{
     background-image: url(../img/211201_164008_jpg.jpg);
+    transition: transform .3s;
 }
 
 .qna_list{

@@ -16,6 +16,12 @@
 }
 
 
+figure > a> img:hover {
+    transform: scale(1.05);
+}
+
+
+
 .magazine >div:hover .hover{
     transform: scale(1.05);
 }
