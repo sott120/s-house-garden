@@ -11,8 +11,15 @@ section{
     width: 1200px;
     margin: auto;
     padding: 30px 0 50px;
-    border-bottom: solid #f2f2f2;
     overflow: hidden; /*섹션보다 넓으면 가려서 안정적인 100%*/
+}
+
+section:first-child{
+    border-bottom: solid #f2f2f2;
+}
+
+.mt50{
+    margin-top: 50px;
 }
 
 .slide_wrap{
@@ -188,6 +195,7 @@ figure > div{
 
 figure >a{
     display: block;
+    position: relative;
     width: 100%;
     overflow: hidden;
     border-radius: 4px;
@@ -533,8 +541,17 @@ figure > a> div::after{
 }
 
 
-.youtube .img2{
+.youtube .img1{
     background-image: url(../img/movie/210607_093457.png);
+}
+.youtube .img2{
+    background-image: url(../img/movie/210618_094827.png);
+}
+.youtube .img3{
+    background-image: url(../img/movie/220411_085344.jpg);
+}
+.youtube .img4{
+    background-image: url(../img/movie/210616_181330.png);
 }
 
 .youtube .play{
@@ -581,10 +598,11 @@ figure > a> div::after{
     background-color: #222624;
 }
 
-.youtube .scrap{
+.scrap{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    display: block;
+    right: 10px;
+    bottom: 10px;
     width: 41px;
     height: 41px;
     background-image: url(../img/ico/scrap.png);
@@ -922,6 +940,32 @@ figure > a> img{
     padding-right: 22px;
 }
 
+/***** hover 애니메이션 *****/
+.category_list li:hover p{
+    text-decoration: underline;
+}
+.lank_name >a:hover{
+    text-decoration: underline;
+}
+.story figure a:hover figcaption{
+    text-decoration: underline;
+}
+.mdpick figure a:hover figcaption> p{
+    text-decoration: underline;
+}
+
+
+figure > a> img:hover {
+    transform: scale(1.05);
+}
+.magazine >div:hover .hover{
+    transform: scale(1.05);
+}
+/***** //hover 애니메이션 *****/
+
+
+
+
 /************************ 미디어쿼리 시작 ********************/
 @media only screen and (max-width:1200px){
 
@@ -968,7 +1012,7 @@ figure > a> img{
 
     }
 
-    .youtube .scrap{
+    .scrap{
         width: 29px;
         height: 34px;
         background-size: 22px auto;

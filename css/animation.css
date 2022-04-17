@@ -1,11 +1,10 @@
 .category_list li:hover p{
     text-decoration: underline;
-
 }
 
-
-
-
+.lank_name >a:hover{
+    text-decoration: underline;
+}
 
 .story figure a:hover figcaption{
     text-decoration: underline;
@@ -19,8 +18,6 @@
 figure > a> img:hover {
     transform: scale(1.05);
 }
-
-
 
 .magazine >div:hover .hover{
     transform: scale(1.05);
