@@ -1,9 +1,8 @@
-
-.h_top_wrap{
+.h_top_wrap {
     background-color: #f2f2f2;
 }
 
-.h_top{
+.h_top {
     width: 1200px;
     height: 40px;
     line-height: 40px;
@@ -12,12 +11,12 @@
     justify-content: space-between;
 }
 
-.h_top ul{
+.h_top ul {
     display: flex;
     align-items: center;
 }
 
-.sns li a{
+.sns li a {
     display: block;
     width: 20px;
     height: 20px;
@@ -28,60 +27,57 @@
     background-size: 100% 100%;
 }
 
-.u_gp >a{
+.u_gp > a {
     background-image: url(../img/common/u_gp.png);
 }
 
-.u_ap >a{
+.u_ap > a {
     background-image: url(../img/common/u_ap.png);
 }
 
-.u_in >a{
+.u_in > a {
     background-image: url(../img/common/u_in.png);
 }
 
-.u_kc >a{
+.u_kc > a {
     background-image: url(../img/common/u_kc.png);
 }
 
-.u_fb >a{
+.u_fb > a {
     background-image: url(../img/common/u_fb.png);
 }
 
-.u_yt >a{
+.u_yt > a {
     background-image: url(../img/common/u_yt.png);
 }
 
-
-.login > li > a{
+.login > li > a {
     font-size: 12px;
     color: #808080;
     margin-left: 20px;
 }
 
-.login > li > a:hover{
+.login > li > a:hover {
     text-decoration: underline;
 }
 
-
-
 /****** 헤더 두번째라인 시작 ******/
 
-.icon{
+.icon {
     background-image: url(../img/common/sp_common.png);
 }
 
-.h_bot_wrap{
-    border-bottom: 1px solid #d9d9d9 ;
+.h_bot_wrap {
+    border-bottom: 1px solid #d9d9d9;
 }
 
-.h_bot{
+.h_bot {
     width: 1200px;
     padding-bottom: 10px;
     margin: auto;
 }
 
-.logo{
+.logo {
     /* a태그에 이미지를 넣으려면 디스플레이 블록 필요*/
     display: block;
     width: 160px;
@@ -89,26 +85,24 @@
     margin: 20px auto;
 }
 
-
-.h_bot >div{
+.h_bot > div {
     display: flex;
     align-items: center;
 }
 
-.h_bot nav{
+.h_bot nav {
     width: calc(100% - 210px);
     height: 40px;
     display: flex;
     justify-content: space-between;
 }
 
-.gnb_wrap{
+.gnb_wrap {
     display: flex;
     align-items: center;
 }
 
-
-.btn_nav{
+.btn_nav {
     display: block;
     width: 26px;
     height: 17px;
@@ -116,28 +110,27 @@
     margin-right: 20px;
 }
 
-
-.gnb{
+.gnb {
     display: flex;
 }
 
-.gnb li{
+.gnb li {
     padding: 0 17px;
 }
 
-.gnb >li >a{
+.gnb > li > a {
     line-height: 40px;
     font-size: 16px;
     font-weight: 700;
     color: #222624;
 }
 
-.active{
-    color: #009a3e !important; 
+.active {
+    color: #009a3e !important;
     position: relative;
 }
 
-.active::after{
+.active::after {
     content: "";
     display: block;
     width: 7px;
@@ -150,44 +143,43 @@
     transform: translate(-50%);
 }
 
-.sp_icon{
+.sp_icon {
     height: 40px;
 }
 
-.sp_icon >ul{
+.sp_icon > ul {
     height: 40px;
     display: flex;
     align-items: center;
 }
 
-.sp_icon >ul > li{
+.sp_icon > ul > li {
     width: 40px;
 }
 
-.sp_icon a{
+.sp_icon a {
     display: block;
 }
 
-
-.sp_icon .sp_myinfo{
+.sp_icon .sp_myinfo {
     width: 21px;
     height: 21px;
     background-position: -50px -32px;
 }
 
-.sp_icon .sp_cart{
+.sp_icon .sp_cart {
     width: 26px;
     height: 24px;
     background-position: -73px -32px;
 }
 
-.sp_icon .sp_wright{
+.sp_icon .sp_wright {
     width: 22px;
     height: 22px;
     background-position: -101px -32px;
 }
 
-.search_wrap{
+.search_wrap {
     width: 210px;
     height: 40px;
     border-radius: 4px;
@@ -199,13 +191,13 @@
     box-sizing: border-box;
 }
 
-.search_wrap >input{
+.search_wrap > input {
     background: none;
     border: none;
     outline: none;
 }
 
-.search_wrap >span >a{
+.search_wrap > span > a {
     display: block;
     width: 17px;
     height: 17px;
@@ -213,31 +205,30 @@
     background-position: -125px -32px;
 }
 
-
 /* footer */
 
-footer{
+footer {
     width: 100%;
     background-color: #4d4d4d;
     padding: 50px 0;
 }
 
-.footer_wrap{
+.footer_wrap {
     width: 1200px;
-    margin: auto; 
+    margin: auto;
 }
 
-.f_cs >ul{
+.f_cs > ul {
     display: flex;
     font-size: 15px;
     color: #d9d9d9;
 }
 
-.f_cs li{
+.f_cs li {
     padding-right: 5px;
 }
 
-.f_nav{
+.f_nav {
     display: flex;
     width: 100%;
     background-color: #3e3e3e;
@@ -247,21 +238,19 @@ footer{
     box-sizing: border-box;
 }
 
-.f_nav ul{
+.f_nav ul {
     display: flex;
     justify-content: space-around;
 }
 
-.f_nav ul:first-child{
+.f_nav ul:first-child {
     width: 60%;
 }
-.f_nav ul:last-child{
+.f_nav ul:last-child {
     width: 40%;
 }
 
-
-
-.f_nav ul li a{
+.f_nav ul li a {
     display: block;
     line-height: 50px;
     font-size: 16px;
@@ -274,138 +263,112 @@ footer{
     white-space: nowrap;
 }
 
-address span{
+address span {
     color: #d9d9d9;
     font-size: 14px;
 }
 
-address a, .f_info a{
+address a,
+.f_info a {
     color: #fff;
     font-size: 14px;
     text-decoration: underline;
 }
 
-.f_info{
+.f_info {
     font-size: 14px;
     margin-top: 26px;
     padding-top: 32px;
     color: #b3b3b3;
     word-break: keep-all;
-    border-top: 2px solid #494949
+    border-top: 2px solid #494949;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:1200px){
-    .h_top{
+@media only screen and (max-width: 1200px) {
+    .h_top {
         width: 100%;
         height: 28px;
         line-height: 28px;
         padding: 0 23px;
         box-sizing: border-box;
-    }   
+    }
 
-    .sns li a{
+    .sns li a {
         width: 18px;
         height: 18px;
     }
 
-    .login > li > a{
+    .login > li > a {
         font-size: 11px;
     }
 
-
-
-    .h_bot{
+    .h_bot {
         width: 100%;
         padding: 0 23px 10px;
         box-sizing: border-box;
     }
 
-    .h_bot nav{
+    .h_bot nav {
         width: calc(100% - 165px);
     }
 
-    .gnb >li{
+    .gnb > li {
         padding: 10px;
     }
-    .gnb >li >a{
+    .gnb > li > a {
         line-height: 28px;
         font-size: 14px;
         font-weight: 700;
         color: #222624;
     }
 
-    .btn_nav{
+    .btn_nav {
         width: 18px;
         height: 12px;
         background-position: -16px -23px;
         margin-right: 20px;
-        background-size: 112px auto;/*이거 맨 아래에 넣어야 너비 안먹음*/
+        background-size: 112px auto; /*이거 맨 아래에 넣어야 너비 안먹음*/
     }
 
-
-    
-    .sp_icon >ul > li{
+    .sp_icon > ul > li {
         width: 34px;
     }
 
-    .sp_icon a{
+    .sp_icon a {
         display: block;
         background-size: 112px auto;
     }
 
-
-    .sp_icon .sp_myinfo{
+    .sp_icon .sp_myinfo {
         width: 15px;
         height: 15px;
         background-position: -35px -23px;
     }
 
-    .sp_icon .sp_cart{
+    .sp_icon .sp_cart {
         width: 18px;
         height: 17px;
         background-position: -51px -23px;
     }
 
-    .sp_icon .sp_wright{
+    .sp_icon .sp_wright {
         width: 15.5px;
         height: 15.5px;
         background-position: -70px -23px;
     }
 
-
-    .search_wrap{
+    .search_wrap {
         width: 165px;
         height: 28px;
         letter-spacing: -2px;
     }
 
-    .search_wrap >input{
+    .search_wrap > input {
         font-size: 11px;
         width: 130px;
     }
-    
-    .search_wrap >span >a{
+
+    .search_wrap > span > a {
         display: block;
         width: 17px;
         height: 17px;
@@ -413,13 +376,11 @@ address a, .f_info a{
         background-position: -125px -32px;
     }
 
-
-    .footer_wrap{
-        width: 100%; 
+    .footer_wrap {
+        width: calc(100% - 40px);
     }
 
-
-    .f_nav ul li a{
+    .f_nav ul li a {
         display: block;
         line-height: 35px;
         font-size: 14px;
@@ -428,40 +389,32 @@ address a, .f_info a{
         background-size: 6px auto;
     }
 
-
-
-
-
-        /* footer */
+    /* footer */
     /* max-width: 1200px; */
-
 }
 
-
-@media only screen and (max-width:767px){
-
-    .h_top{
+@media only screen and (max-width: 767px) {
+    .h_top {
         display: none;
     }
 
-    .h_bot_wrap{
+    .h_bot_wrap {
         border-bottom: none;
     }
 
-    .gnb{
+    .gnb {
         display: none;
     }
 
-    .sp_icon >ul > li:first-child{
+    .sp_icon > ul > li:first-child {
         display: none;
     }
 
-    .sp_icon >ul > li:last-child{
+    .sp_icon > ul > li:last-child {
         display: none;
     }
 
-
-    .h_bot{
+    .h_bot {
         padding: 0 10px;
     }
 
@@ -472,35 +425,33 @@ address a, .f_info a{
         background-size: cover;
     }
 
-    .h_bot nav{
+    .h_bot nav {
         width: calc(100% - 20px);
         position: absolute;
         top: 10px;
     }
 
-
-    .search_wrap{
+    .search_wrap {
         width: 100%;
         height: 28px;
         letter-spacing: -2px;
     }
 
-
-    footer{
+    footer {
         padding: 50px 20px;
-        box-sizing: border-box;    
+        box-sizing: border-box;
     }
 
-    .f_cs >ul {
+    .f_cs > ul {
         font-size: 13px;
     }
-    
-    .f_nav{
+
+    .f_nav {
         background-color: transparent;
         padding: 0;
     }
-    
-    .f_nav ul{
+
+    .f_nav ul {
         flex-direction: column;
         justify-content: flex-start;
         background-color: #3e3e3e;
@@ -509,36 +460,34 @@ address a, .f_info a{
         padding: 12px;
         box-sizing: border-box;
     }
-    
-    .f_nav ul:first-child{
+
+    .f_nav ul:first-child {
         width: calc(50% - 8px);
     }
-    .f_nav ul:last-child{
+    .f_nav ul:last-child {
         width: calc(50% - 8px);
         margin-left: 16px;
     }
-    
-    .f_nav ul li a{
 
+    .f_nav ul li a {
         font-size: 12px;
-
     }
 
-    address a{
+    address a {
         display: block;
         margin-bottom: 10px;
     }
-    .m_block span{
+    .m_block span {
         display: block;
     }
 
-    address span, address a, .f_info, .f_info a{
+    address span,
+    address a,
+    .f_info,
+    .f_info a {
         font-size: 12px;
     }
 
-    
     /* footer */
     /* max-width: 767px; */
 }
-
-

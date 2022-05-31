@@ -105,21 +105,20 @@
         </header>
         <main>
             <section>
-                <article class="swiper mySwiper slide_wrap">
+                <article class="mySwiper slide_wrap">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slide_img img1">
-                            <a href="#"></a>
-                            <!-- 배경이미지 반응형으로 줄어들 때 
-                        460/1200*100 = 38.333높이/너비*100 -->
+                        <div class="swiper-slide">
+                            <a class="slide_img img1" href="#"></a>
                         </div>
-                        <div class="swiper-slide slide_img img2">
-                            <a href="#"></a>
+                        <div class="swiper-slide">
+                            <a class="slide_img img2" href="#"></a>
                         </div>
-                        <div class="swiper-slide slide_img img3">
-                            <a href="#"></a>
+                        <div class="swiper-slide">
+                            <a class="slide_img img3" href="#"></a>
                         </div>
                     </div>
-
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <ul class="arrows">
                         <li><a href="#"> &lt; </a></li>
                         <li class="swiper-pagination"></li>
@@ -768,6 +767,7 @@
                 pagination: {
                     el: ".swiper-pagination",
                     type: "fraction",
+                    clickable: true,
                 },
                 navigation: {
                     nextEl: ".swiper-button-next",

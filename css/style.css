@@ -24,6 +24,7 @@ section:first-child {
 
 .slide_wrap {
     overflow: hidden;
+    position: relative;
 }
 
 .slide_img {
@@ -48,24 +49,9 @@ section:first-child {
     background-image: url(../img/banner/220103_083058_232100p.jpg);
 }
 
-.swiper {
-    width: 100%;
-    height: auto;
-}
-
 .swiper-slide {
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -88,6 +74,24 @@ section:first-child {
     line-height: 27px;
     color: #b3b3b3;
     padding: 0 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: 0;
+    transform: translateY(-100%);
+    z-index: 10;
+    color: #4d4d4d;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.2;
+    padding: 10px 3px;
+    border-radius: 10px;
+    /* transition: 0.2s; */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 0.7;
 }
 
 .swiper-pagination {
@@ -301,10 +305,6 @@ figure > a > div::after {
 .story_img8 {
     background-image: url(../img/photo_list/s210701_150503611.png);
 }
-/* .story >figure >a >div{
-    width: 25%;
-    padding: 10px;
-} */
 
 .story figcaption {
     font-size: 14px;
@@ -1108,7 +1108,7 @@ figure > a > img:hover {
         z-index: 10;
         padding: 0 10px;
         top: -40px;
-        right: 10px;
+        right: 20px;
         background: rgba(0, 0, 0, 0.2);
         border-radius: 20px;
     }
