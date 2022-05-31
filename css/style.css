@@ -11,7 +11,8 @@ section {
     width: 1200px;
     margin: auto;
     padding: 30px 0 50px;
-    overflow: hidden; /*섹션보다 넓으면 가려서 안정적인 100%*/
+    overflow: hidden;
+    /*섹션보다 넓으면 가려서 안정적인 100%*/
 }
 
 section:first-child {
@@ -42,9 +43,11 @@ section:first-child {
 .slide_img.img1 {
     background-image: url(../img/banner/220330_052325_189300p.jpg);
 }
+
 .slide_img.img2 {
     background-image: url(../img/banner/220103_083058_257700p.jpg);
 }
+
 .slide_img.img3 {
     background-image: url(../img/banner/220103_083058_232100p.jpg);
 }
@@ -58,7 +61,8 @@ section:first-child {
 .arrows {
     float: right;
     display: flex;
-    padding: 20px;
+    padding: 20px 50px;
+    position: relative;
 }
 
 .arrows li {
@@ -76,22 +80,18 @@ section:first-child {
     padding: 0 5px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    margin-top: 0;
-    transform: translateY(-100%);
-    z-index: 10;
-    color: #4d4d4d;
-    background-color: rgba(255, 255, 255, 0.8);
-    opacity: 0.2;
-    padding: 10px 3px;
-    border-radius: 10px;
-    /* transition: 0.2s; */
+.swiper-button-next {
+    right: 20px;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    opacity: 0.7;
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .swiper-pagination {
@@ -100,6 +100,7 @@ section:first-child {
     left: 0;
     top: 0;
 }
+
 .swiper-pagination span:first-child {
     color: #808080;
 }
@@ -180,6 +181,7 @@ section:first-child {
 ::-webkit-scrollbar {
     display: none;
 }
+
 /* 크롬에서 스크롤바 없애기 */
 
 .tab {
@@ -238,6 +240,7 @@ figure > a {
     overflow: hidden;
     border-radius: 4px;
 }
+
 figure > a > div {
     width: 100%;
     padding-top: 66.67%;
@@ -320,9 +323,11 @@ figure > a > div::after {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+
 .more_btn > div {
     display: none;
 }
+
 .user_img1 {
     background-image: url(../img/profile/220327_101738_jpeg.jpg);
 }
@@ -354,6 +359,7 @@ figure > a > div::after {
 .user_img8 {
     background-image: url(../img/profile/210226_142333_png.jpg);
 }
+
 .story > figure p {
     width: calc(100% - 39px);
     line-height: 33px;
@@ -535,6 +541,7 @@ figure > a > div::after {
     display: flex;
     flex-wrap: wrap;
 }
+
 .video > div {
     width: calc(33.333% - 20px);
     margin-right: 20px;
@@ -567,12 +574,15 @@ figure > a > div::after {
 .youtube .img1 {
     background-image: url(../img/movie/210607_093457.png);
 }
+
 .youtube .img2 {
     background-image: url(../img/movie/210618_094827.png);
 }
+
 .youtube .img3 {
     background-image: url(../img/movie/220411_085344.jpg);
 }
+
 .youtube .img4 {
     background-image: url(../img/movie/210616_181330.png);
 }
@@ -634,7 +644,8 @@ figure > a > div::after {
 }
 
 .video > div:hover .thums {
-    transform: scale(1.05); /*105%*/
+    transform: scale(1.05);
+    /*105%*/
 }
 
 .video > div:hover p {
@@ -656,6 +667,7 @@ figure > a > div::after {
     top: 30px;
     left: 50px;
 }
+
 .tooltip::after {
     content: "";
     border-top: 50px solid #fff;
@@ -681,9 +693,11 @@ figure > a > div::after {
     /* 인라인블록과 화이트스페이스 노랩 같이 쓰면 한줄 안에 유지 */
     padding-left: 50px;
 }
+
 .keyword li:last-child {
     padding-left: 100px;
 }
+
 .keyword a {
     display: inline-block;
     padding: 0 30px;
@@ -801,6 +815,7 @@ figure > a > div::after {
     padding-top: 128.8%;
     /* 높이 맞춰주려고 포지션주고, 패딩계산, 자식에 left0 right0 */
 }
+
 .guide a > div {
     position: absolute;
     left: 0;
@@ -813,12 +828,15 @@ figure > a > div::after {
 .guide .img1 {
     background-image: url(../img/tour/211213_093642_png.png);
 }
+
 .guide .img2 {
     background-image: url(../img/tour/211213_093707_png.png);
 }
+
 .guide .img3 {
     background-image: url(../img/tour/211213_093741_png.png);
 }
+
 .guide .img4 {
     background-image: url(../img/tour/211213_093812_png.png);
 }
@@ -903,6 +921,7 @@ figure > a > img {
     padding: 0 10px;
     box-sizing: border-box;
 }
+
 .magazine > div > a {
     display: block;
     width: 100%;
@@ -922,10 +941,12 @@ figure > a > img {
     background-image: url(../img/211001_093655_jpg.jpg);
     transition: transform 0.3s;
 }
+
 .magazine .img2 {
     background-image: url(../img/211021_094710_jpg.jpg);
     transition: transform 0.3s;
 }
+
 .magazine .img3 {
     background-image: url(../img/211201_164008_jpg.jpg);
     transition: transform 0.3s;
@@ -934,6 +955,7 @@ figure > a > img {
 .qna_list {
     margin-bottom: 20px;
 }
+
 .qna_wrap img {
     width: 49px;
     height: 49px;
@@ -957,12 +979,15 @@ figure > a > img {
 .category_list li:hover p {
     text-decoration: underline;
 }
+
 .lank_name > a:hover {
     text-decoration: underline;
 }
+
 .story figure a:hover figcaption {
     text-decoration: underline;
 }
+
 .mdpick figure a:hover figcaption > p {
     text-decoration: underline;
 }
@@ -970,9 +995,11 @@ figure > a > img {
 figure > a > img:hover {
     transform: scale(1.05);
 }
+
 .magazine > div:hover .hover {
     transform: scale(1.05);
 }
+
 /***** //hover 애니메이션 *****/
 
 /************************ 미디어쿼리 시작 ********************/
@@ -992,6 +1019,7 @@ figure > a > img:hover {
         height: 48px;
         margin-right: 14px;
     }
+
     .lank_txt {
         width: calc(100% - 62px);
     }
@@ -1063,6 +1091,7 @@ figure > a > img:hover {
     .quick .txt {
         font-size: 13px;
     }
+
     .quick .sp {
         position: relative;
         width: 33px;
@@ -1077,6 +1106,7 @@ figure > a > img:hover {
     .quick .gm {
         background-position: -66px 0;
     }
+
     /* max-width: 1200px */
 }
 
@@ -1096,9 +1126,11 @@ figure > a > img:hover {
     .slide_img.img1 {
         background-image: url(../img/banner/220330_052325_255300m.jpg);
     }
+
     .slide_img.img2 {
         background-image: url(../img/banner/220103_083058_268000m.jpg);
     }
+
     .slide_img.img3 {
         background-image: url(../img/banner/220103_083058_240600m.jpg);
     }
@@ -1181,6 +1213,7 @@ figure > a > img:hover {
         width: 100%;
         overflow-x: scroll;
     }
+
     .lank {
         width: calc(170% + 220px);
         padding: 20px 0px;
@@ -1217,8 +1250,10 @@ figure > a > img:hover {
         width: 100%;
         font-size: 12px;
         overflow: hidden;
-        text-overflow: ellipsis; /*...으로 바꿔줌*/
-        white-space: nowrap; /*떨어지지않게*/
+        text-overflow: ellipsis;
+        /*...으로 바꿔줌*/
+        white-space: nowrap;
+        /*떨어지지않게*/
         /* 말줄임표 나오는 삼종세트 */
     }
 
@@ -1248,6 +1283,7 @@ figure > a > img:hover {
         margin-right: 20px;
         margin-bottom: 30px;
     }
+
     .video > div:first-child {
         width: calc(100% - 20px);
         margin-right: 0;
@@ -1257,6 +1293,7 @@ figure > a > img:hover {
         white-space: nowrap;
         padding-left: 10px;
     }
+
     .keyword li:last-child {
         padding-left: 50px;
     }
@@ -1293,9 +1330,11 @@ figure > a > img:hover {
         position: relative;
         padding: 15px 0 15px 6.78%;
     }
+
     .quick .txt {
         font-size: 11px;
     }
+
     .quick .sp {
         top: 51px;
         right: 10px;
@@ -1318,6 +1357,7 @@ figure > a > img:hover {
     .photo {
         margin-bottom: 10px;
     }
+
     .photo .colum {
         width: 50%;
     }

@@ -117,12 +117,10 @@
                             <a class="slide_img img3" href="#"></a>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <ul class="arrows">
-                        <li><a href="#"> &lt; </a></li>
+                        <li class="swiper-button-next"></li>
                         <li class="swiper-pagination"></li>
-                        <li><a href="#"> &gt; </a></li>
+                        <li class="swiper-button-prev"></li>
                     </ul>
                 </article>
                 <ul class="category_list">
@@ -774,6 +772,12 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
+
+            document.getElementsByClassName("swiper-pagination")[0].innerHTML = `
+                <span class="swiper-pagination-current">1</span>
+                ·
+                <span class="swiper-pagination-total">3</span>
+              `;
         </script>
     </body>
 </html>
