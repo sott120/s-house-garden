@@ -105,6 +105,15 @@ section:first-child {
     color: #808080;
 }
 
+/* swiper 추가 */
+
+.swiper_li {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 /* 카테고리시작 */
 
 .category_list {
@@ -118,11 +127,11 @@ section:first-child {
 }
 
 .new_cate::after {
-    content: "";
+    content: '';
     display: block;
     width: 16px;
     height: 21px;
-    background: url("../img/ico/new_cate.png") no-repeat 0 -50px;
+    background: url('../img/ico/new_cate.png') no-repeat 0 -50px;
     position: absolute;
     right: 5px;
     top: 5px;
@@ -245,13 +254,19 @@ figure > a > div {
     width: 100%;
     padding-top: 66.67%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     position: relative;
+    border-radius: 4px;
+    transition: background 0.4s ease-in-out;
+}
+
+figure > a:hover > div {
+    background-size: 104%;
 }
 
 figure > a > div::after {
-    content: "";
+    content: '';
     display: block;
     width: 41px;
     height: 47px;
@@ -311,7 +326,7 @@ figure > a > div::after {
 
 .story figcaption {
     font-size: 14px;
-    margin: 15px 0 10px;
+    margin: 10px 0;
     color: #4d4d4d;
 }
 
@@ -385,6 +400,7 @@ figure > a > div::after {
 .lank {
     width: calc(100% + 20px);
     padding: 20px 40px;
+    padding-left: 0;
     box-sizing: border-box;
     display: flex;
 }
@@ -572,19 +588,27 @@ figure > a > div::after {
 }
 
 .youtube .img1 {
-    background-image: url(../img/movie/210607_093457.png);
+    background-image: url(../img/movie/210614_092642.png);
 }
 
 .youtube .img2 {
-    background-image: url(../img/movie/210618_094827.png);
+    background-image: url(../img/movie/210601_094011.png);
 }
 
 .youtube .img3 {
-    background-image: url(../img/movie/220411_085344.jpg);
+    background-image: url(../img/movie/210604_094352.jpg);
 }
 
 .youtube .img4 {
     background-image: url(../img/movie/210616_181330.png);
+}
+
+.youtube .img5 {
+    background-image: url(../img/movie/210609_093529.png);
+}
+
+.youtube .img6 {
+    background-image: url(../img/movie/210602_093912.png);
 }
 
 .youtube .play {
@@ -599,7 +623,7 @@ figure > a > div::after {
 }
 
 .youtube .play::after {
-    content: "";
+    content: '';
     border-left: 12px solid #000;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -616,7 +640,7 @@ figure > a > div::after {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .youtube .time {
@@ -669,7 +693,7 @@ figure > a > div::after {
 }
 
 .tooltip::after {
-    content: "";
+    content: '';
     border-top: 50px solid #fff;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -1177,7 +1201,7 @@ figure > a > img:hover {
     }
 
     figure > a > div::after {
-        content: "";
+        content: '';
         display: block;
         width: 29px;
         height: 34px;
