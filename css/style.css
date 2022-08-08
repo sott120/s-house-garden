@@ -491,6 +491,14 @@ figure > a > div::after {
     background-image: url(../img/photo_list/s210422_094249611.png);
     background-size: cover;
 }
+.trip2 {
+    background-image: url(../img/photo_list/s210621_142629608.jpg);
+    background-size: cover;
+}
+.trip3 {
+    background-image: url(../img/photo_list/s210701_150503611.png);
+    background-size: cover;
+}
 
 .trip_img {
     width: 49px;
